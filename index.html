@@ -1,60 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BMI Calculator</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="outer-con">
-      <div class="container">
-        <h1>BMI Calculator</h1>
 
-        <form>
-          <div class="bothHeight">
-            <label for="height">Height:</label>
-            <input type="text" id="height" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-            <select id="unit" onchange="changeUnit()">
-              <option value="cm" selected>CM</option>
-              <option value="feet">Feet</option>
-            </select>
-          </div>
+<body>
+  <div class="outer-con">
+    <div class="container">
+      <h1>BMI Calculator</h1>
 
-          <label for="weight">Weight in KG:</label>
+      <form>
+        <div class="changeHeight">
+          <label for="height">Height:</label>
+          <input type="text" id="height" />
+
+          <select id="getHeight">
+            <option value="cm" selected>CM</option>
+            <option value="feet">Feet</option>
+          </select>
+        </div>
+
+        <div class="changeWeight">
+          <label for="weight">Weight:</label>
           <input type="text" id="weight" />
 
-          <button type="submit">Calculate</button>
+          <select id="getWeight">
+            <option value="Kg" selected>KG</option>
+            <option value="Pounds">Pounds</option>
+          </select>
+        </div>
 
-          <div class="box">
-            <div id="results"></div>
 
-            <div class="line"></div>
 
-            <h3>Information</h3>
-            <div class="info">
-              <p id="blue">Underweight</p>
-              <p id="green">Normal</p>
-              <p id="red">Overweight</p>
-            </div>
-            <div class="line2">
-              <div class="left"></div>
-              <div class="centre"></div>
-              <div class="right"></div>
-            </div>
-            <div class="numbers">
-              <p>16.0</p>
-              <p>18.5</p>
-              <p>25.0</p>
-              <p>40.0</p>
-            </div>
+        <button type="submit">Calculate</button>
+
+        <div class="box">
+          <div id="results"></div>
+
+          <div class="line"></div>
+
+          <h3>Information</h3>
+          <div class="info">
+            <p id="blue">Underweight</p>
+            <p id="green">Normal</p>
+            <p id="red">Overweight</p>
           </div>
-          <button id="share-button">Share</button>
-        </form>
-      </div>
+          <div class="line2">
+            <div class="left"></div>
+            <div class="centre"></div>
+            <div class="right"></div>
+          </div>
+          <div class="numbers">
+            <p>16.0</p>
+            <p>18.5</p>
+            <p>25.0</p>
+            <p>40.0</p>
+          </div>
+        </div>
+        <button id="share-button">Share</button>
+      </form>
     </div>
+  </div>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>

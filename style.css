@@ -146,17 +146,13 @@ p {
   margin-top: -10px;
 }
 
-.bothHeight {
+.changeHeight, .changeWeight {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-#weight {
-  margin-top: -5px;
-}
-
-#height {
+#height , #weight {
   margin: 5px;
   color: black;
 }
